@@ -29,24 +29,24 @@ if (millis() - lastTick >= 1000) {
 
 }
 
-// move forward one mite every 60 seconds
+// move forward one minute every 60 seconds
   if (second >= 60) {
   minute++;
-  second = 0; // reseteconds to zero
+  second = 0; // reset seconds to zero
 }
 
-// move forward one ho every 60 minutes
+// move forward one hour every 60 minutes
 if (minute >=60) {
   hour++;
-  minute = 0; // resetinutes to zero
+  minute = 0; // reset minutes to zero
 }
 
 if (hour >=24) {
   hour=0;
-  minute = 0; // resetinutes to zero
+  minute = 0; // reset minutes to zero
 }
 
-  sunit = second%10; // ets the variable munit and hunit for the unit digits
+  sunit = second%10; // sets the variable munit and hunit for the unit digits
   munit = minute%10;
   hunit = hour%10;
 
@@ -61,7 +61,7 @@ if (hour >=24) {
   if(second >= 20 && second < 40)  {LedSign::Set(8, 4, 1);} else {LedSign::Set(8, 4, 0);}
   if(second >= 40 && second < 60) {LedSign::Set(8, 3, 1);} else {LedSign::Set(8, 3, 0);}
 
-  //minutes units
+  //minute units
   if(munit == 1 || munit == 3 || munit == 5 || munit == 7 || munit == 9) {LedSign::Set(7, 5, 1);} else {LedSign::Set(7, 5, 0);}
   if(munit == 2 || munit == 3 || munit == 6 || munit == 7) {LedSign::Set(7, 4, 1);}  else {LedSign::Set(7, 4, 0);}
   if(munit == 4 || munit == 5 || munit == 6 || munit == 7) {LedSign::Set(7, 3, 1);}  else {LedSign::Set(7, 3, 0);}
