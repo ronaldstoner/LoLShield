@@ -1,7 +1,7 @@
 /*
   Greyscale Smooth Fading Example for the LoL Shield
 
-  Written by Ronald Stoner (ronstoner.info)
+  Written by Ron Stoner (ronstoner.info)
   Based off greyscale example code written by jimmie rodgers (jimmieprodgers.com)
 
   This code is in the public domain.
